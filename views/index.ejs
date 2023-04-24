@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>< Entrar /></title>
+  <style>
+ @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Grenze+Gotisch:wght@900&family=Jolly+Lodger&family=New+Rocker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+    body{
+      background: #303030;
+    }
+    h1{
+      color: gold;
+      text-shadow: 0px 0px 12px white, -1px 0px blue, 0px 1px green, 1px 0px white,0px -1px purple;
+      text-align: center;
+      font-size: 40px;
+      font-family:'New Rocker',cursive, Arial;
+    }
+    h2{
+      text-align: center;
+      color: white;
+      font-family: 'Comic Neue';
+    }
+    img{
+      border-radius: 50%; 
+      height: 270px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    form{
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: #303030;
+  border-radius: 7%;
+  color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input{
+  width: 90%;
+  height: 40px;
+  padding: 5px 
+  border: none;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fa-node{
+  font-size: 3.5em;
+}
+
+button{
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: gold;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Quicksand';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+button:hover{
+  background: #1b1b1b;
+}
+
+span{
+  padding: 20px;
+  background: rgba(255, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 550px){
+  form{
+    background: none;
+  }
+}
+
+@media screen and (max-width: 400px){
+  form input{
+    width: 50%;
+  }
+
+  p{
+    text-align: center;
+    width: 250px;
+  }
+}
+.copy{
+ color: white;
+ text-align: center;
+ font-size: 15px;
+ font-family: 'Comfortaa';
+}
+  </style>
+</head>
+
+<body>
+<h1>Seja bem vindo(a)</h1>
+<h2>Faça login abaixo para fazer suas consultas</h2>
+<img src="https://telegra.ph/file/3483ab772847dfc143299.jpg" alt="">
+<div id="corpo-formu">
+<form method="post" action="/login">
+<h1><i class="fab fa-node"></i></h1>
+<input id="email" type="email" name="email" placeholder="Email" autocomplete="off" id="email"><br>
+<input type="password" name="senha" placeholder="Senha" id="senha"><br>
+<button class="btn" id ="btn" >Entrar</button>
+</form>
+</div>
+<div class="copy">
+  <p>© Copyright Gabriel Tenório 2023</p>
+</div>
+<script src="/public/script.js"></script>
+</body>
+</html>
